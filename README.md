@@ -28,3 +28,7 @@ npm run dev
 ## :scroll: Environment Variables
 
 - see the `.env.example` files
+
+## License
+
+This repository is licensed under the GNU Affero General Public License v3.0.
