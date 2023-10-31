@@ -1,5 +1,7 @@
 # Live Chat Application
 [![ci](https://github.com/ttiimmothy/live-chat-application/actions/workflows/ci.yml/badge.svg)](https://github.com/ttiimmothy/live-chat-application/actions/workflows/ci.yml)
+[![cd](https://github.com/ttiimmothy/live-chat-application/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/live-chat-application/actions/workflows/cd.yml)
+[![pages-build-deployment](https://github.com/ttiimmothy/live-chat-application/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/live-chat-application/actions/workflows/pages/pages-build-deployment)
 
 A live chat application using `Typescript`, `React` amd `Vite`. It uses `React Bootstrap` and `Tailwind CSS` for simplifying CSS usage. The application uses `react-redux` and `@redux/toolkit` for state management and `react-router` to do routing.
 
