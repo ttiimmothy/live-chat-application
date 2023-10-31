@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex justify-center border-b-2">
       <div className="w-full h-12 flex justify-between items-center max-w-5xl mx-auto px-8">
-        <a className="text-xl font-semibold" href="/">
-          Live Chat
+        <a className="text-xl font-semibold text-gray-600" href="/">
+          Chat rooms
         </a>
         {user ? (
           <button onClick={signOut} className="sign-out" type="button">
