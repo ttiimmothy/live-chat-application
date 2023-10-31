@@ -5,6 +5,8 @@ on:
       - production
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
