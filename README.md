@@ -6,10 +6,10 @@ A live chat application using `Typescript`, `React` amd `Vite`. It uses `React B
 ## 🎯 Features
 
 - create chatrooms
-- real time chats update
+<!-- - real time chats update -->
 - chat with different users in different chatrooms
-- delete chatrooms
-- correct the message if you want
+<!-- - delete chatrooms
+- correct the message if you want -->
 - google login
 
 ## 🖥 Prerequisites
