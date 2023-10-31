@@ -17,6 +17,7 @@ const RoomPage: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [message, setMessage] = useState<string>("");
   const [roomName, setRoomName] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const { id } = useParams();
 
   const [user] = useAuthState(auth);
@@ -43,10 +44,13 @@ const RoomPage: React.FC = () => {
               timestamp: doc.data().timestamp,
             }))
           );
+          setIsLoading(false);
         }
       );
 
-      return () => unsubscribe();
+      return () => {
+        unsubscribe();
+      };
     }
   }, [id]);
 
@@ -71,7 +75,11 @@ const RoomPage: React.FC = () => {
 
   return (
     <div className="max-w-5xl mx-auto mt-6 px-8">
-      <h2 className="text-2xl mb-6">{roomName ? roomName : "unknown room"}</h2>
+      {isLoading || (!isLoading && roomName) ? (
+        <h2 className="text-2xl mb-6">{roomName}</h2>
+      ) : (
+        <h2 className="text-2xl mb-6">unknown room</h2>
+      )}
       <div className="flex flex-col gap-2 my-4 h-[70vh] overflow-auto">
         {messages.map((message, index) => (
           <div key={`message ${index}`}>
