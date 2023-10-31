@@ -1,8 +1,9 @@
 import { ErrorComponent } from "../components/ErrorComponent";
+import { Layout } from "../components/Layout";
 
 export function NotFoundPage(): JSX.Element {
   return (
-    <>
+    <Layout>
       <div className="layout-content-inner">
         <div className="flex card flex-col items-center gap-5 sm:p-8">
           <ErrorComponent />
@@ -11,6 +12,6 @@ export function NotFoundPage(): JSX.Element {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }

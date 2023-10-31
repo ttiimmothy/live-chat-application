@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import App from "./App";
-import { RoomPage } from "./pages/RoomPage";
-import { ChatPage } from "./pages/ChatPage";
+import RoomPage from "./pages/RoomPage";
+import { HomePage } from "./pages/HomePage";
 
 export const router = createBrowserRouter(
   [
@@ -13,9 +13,9 @@ export const router = createBrowserRouter(
       children: [
         {
           index: true,
-          element: <RoomPage />,
+          element: <HomePage />,
         },
-        { path: "chat/:id", element: <ChatPage /> },
+        { path: "room/:id", element: <RoomPage /> },
       ],
     },
   ],
