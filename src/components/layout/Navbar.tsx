@@ -9,7 +9,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex justify-center border-b-2">
       <div className="w-full h-12 flex justify-between items-center max-w-5xl mx-auto px-8">
-        <Link className="text-xl font-semibold text-gray-600" to="/">
+        <Link
+          className="text-xl font-semibold text-gray-600 hover:text-gray-300"
+          to="/"
+        >
           Chat rooms
         </Link>
         {user ? (
