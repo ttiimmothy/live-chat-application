@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Message } from "../components/interfaces/Message";
+import { Message } from "../interfaces/Message";
 import {
   addDoc,
   collection,
