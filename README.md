@@ -3,7 +3,7 @@
 [![cd](https://github.com/ttiimmothy/live-chat-application/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/live-chat-application/actions/workflows/cd.yml)
 [![pages-build-deployment](https://github.com/ttiimmothy/live-chat-application/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/live-chat-application/actions/workflows/pages/pages-build-deployment)
 
-A live chat application using `Typescript`, `React` amd `Vite`. It uses `React Bootstrap` and `Tailwind CSS` for simplifying CSS usage. The application uses `firebase authentication` for google login, `firebase cloud firestore` to store the data and `react-router` to do routing.
+A live chat application using `Typescript`, `React` amd `Vite`. It uses `Tailwind CSS` for simplifying CSS usage. The application uses `firebase authentication` for google login, `firebase cloud firestore` to store the data and `react-router` to do routing.
 
 ## 🎯 Features
 
