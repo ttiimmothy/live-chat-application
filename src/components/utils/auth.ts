@@ -3,7 +3,7 @@ import {
   onAuthStateChanged,
   signInWithPopup,
 } from "firebase/auth";
-import { auth, db } from "../../firebase.config";
+import { auth, db } from "../../../firebase.config";
 import { doc, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
 
 export const googleSignIn = async () => {

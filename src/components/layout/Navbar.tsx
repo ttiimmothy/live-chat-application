@@ -1,5 +1,5 @@
 import { useAuthState } from "react-firebase-hooks/auth";
-import { googleSignIn, signOut } from "../../utils/auth";
+import { googleSignIn, signOut } from "../utils/auth";
 import { auth } from "../../../firebase.config";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
