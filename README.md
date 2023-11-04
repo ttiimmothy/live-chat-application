@@ -3,15 +3,15 @@
 [![cd](https://github.com/ttiimmothy/live-chat-application/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/live-chat-application/actions/workflows/cd.yml)
 [![pages-build-deployment](https://github.com/ttiimmothy/live-chat-application/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/live-chat-application/actions/workflows/pages/pages-build-deployment)
 
-A live chat application using `Typescript`, `React` amd `Vite`. It uses `React Bootstrap` and `Tailwind CSS` for simplifying CSS usage. The application uses `react-redux` and `@redux/toolkit` for state management and `react-router` to do routing.
+A live chat application using `Typescript`, `React` amd `Vite`. It uses `Tailwind CSS` for simplifying CSS usage. The application uses `firebase authentication` for google login, `firebase cloud firestore` to store the data and `react-router` to do routing.
 
 ## 🎯 Features
 
 - create chatrooms
-<!-- - real time chats update -->
+- real time chats update
 - chat with different users in different chatrooms
-<!-- - delete chatrooms
-- correct the message if you want -->
+- delete chatrooms
+- correct the message if you want
 - google login
 
 ## 🖥 Prerequisites
@@ -29,7 +29,28 @@ npm run dev
 
 ## :scroll: Environment Variables
 
-- see the `.env.example` files
+#### details see the `.env.example` files
+
+- `firebase` public api key
+- `firebase` auth domain
+- `firebase` project id
+- `firebase` storage bucket
+- `firebase` sender id
+- `firebase` app id
+- `firebase` analytic id
+
+If you use `github pages` for static page deployment, you need to set these environmental variables in github action`secrets`.
+
+## 🖼 Preview
+![preview1](/public/preview1.png)
+
+## :scroll: Icon Library
+
+- from **<https://css.gg/>**
+
+```HTML
+https://css.gg/css
+```
 
 ## License
 
