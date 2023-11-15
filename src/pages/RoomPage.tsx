@@ -57,9 +57,8 @@ const RoomPage: React.FC = () => {
   const handleSendMessage = async () => {
     if (message.trim() !== "" && id) {
       try {
-        const roomRef = doc(db, "rooms", id); // Reference to the specific room
-        const messagesCollectionRef = collection(roomRef, "messages"); // Reference to the messages sub-collection
-        console.log(message);
+        const roomRef = doc(db, "rooms", id);
+        const messagesCollectionRef = collection(roomRef, "messages");
         await addDoc(messagesCollectionRef, {
           messageText: message,
           timestamp: serverTimestamp(),
