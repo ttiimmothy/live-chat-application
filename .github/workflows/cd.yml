@@ -9,8 +9,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      actions: write
-      contents: read
+      actions: read
+      contents: write
       security-events: write
     steps:
       - name: Checkout
