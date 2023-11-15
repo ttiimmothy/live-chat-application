@@ -59,7 +59,6 @@ const RoomPage: React.FC = () => {
       try {
         const roomRef = doc(db, "rooms", id); // Reference to the specific room
         const messagesCollectionRef = collection(roomRef, "messages"); // Reference to the messages sub-collection
-        console.log(message);
         await addDoc(messagesCollectionRef, {
           messageText: message,
           timestamp: serverTimestamp(),
