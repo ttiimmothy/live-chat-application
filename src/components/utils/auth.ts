@@ -16,13 +16,12 @@ export const signOut = () => {
 };
 
 onAuthStateChanged(auth, async (result) => {
-  // CreateUserProfile
   if (result) {
     const docRef = doc(db, "users", result.email || "");
     try {
       await updateDoc(docRef, {});
     } catch (error) {
-      // If the document doesn't exist, catch the error and set the document
+      console.error(error);
       try {
         await setDoc(docRef, {
           name: result.displayName,
