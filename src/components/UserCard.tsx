@@ -4,6 +4,7 @@ interface UserCardProps {
   name: string;
   email: string;
   createdAt: Timestamp;
+  updatedAt: Timestamp;
 }
 
 const UserCard: React.FC<{ user: UserCardProps }> = ({ user }) => {
@@ -11,9 +12,9 @@ const UserCard: React.FC<{ user: UserCardProps }> = ({ user }) => {
     <div className="rounded-lg shadow-lg p-4 h-[fit-content]">
       <p className="text-lg">{user.name}</p>
       <p>{user.email}</p>
-      {user.createdAt && (
+      {user.updatedAt && (
         <p className="text-gray-500">
-          {user.createdAt.toDate().toUTCString().slice(5, -4)}
+          {user.updatedAt.toDate().toUTCString().slice(5, -4)}
         </p>
       )}
     </div>

@@ -76,6 +76,7 @@ export const HomePage: React.FC = () => {
       name: string;
       email: string;
       createdAt: Timestamp;
+      updatedAt: Timestamp;
     }[]
   >([]);
 
@@ -106,6 +107,7 @@ export const HomePage: React.FC = () => {
           name: doc.data().name,
           email: doc.data().email,
           createdAt: doc.data().createdAt,
+          updatedAt: doc.data().updatedAt,
         }))
       );
     });
@@ -154,6 +156,7 @@ export const HomePage: React.FC = () => {
               name: user.name,
               email: user.email,
               createdAt: user.createdAt,
+              updatedAt: user.updatedAt,
             }}
             key={user.id}
           />
